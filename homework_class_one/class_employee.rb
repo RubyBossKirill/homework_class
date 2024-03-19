@@ -1,7 +1,8 @@
 require_relative 'class_person'
 
 class Employee < Person
-    def initialize(employee_id)
-        @employee_id = employee_id
+    attr_accessor :employee_id
+    def employee_id(id)
+        @employee_id = id
     end
 end
