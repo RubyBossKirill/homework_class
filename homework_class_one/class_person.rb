@@ -2,6 +2,8 @@ require 'date'
 require 'time'
 
 class Person
+    attr_reader :employee_id
+    attr_writer :employee_id
     def initialize(name, age)
         @name = name
         @age = age
